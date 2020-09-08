@@ -6,6 +6,23 @@ def calcularDescuento(precio, dia):
     if (dia) == 'l':
         precioTotal = precio - (precio * 0.10)
 
+    if (dia) == 'm':
+        precioTotal = precio - (precio * 0.05)
+
+    if (dia) == 'M':
+        precioTotal = precio - (precio * 0.03)
+
+    if (dia) == 'j':
+        precioTotal = precio - (precio * 0.01)
+
+    if (dia) == 'v':
+        precioTotal = precio - (precio * 0.07)
+
+    if (dia) == 's':
+        precioTotal = precio
+
+    if (dia) == 'd':
+        precioTotal = precio - (precio * 0.01)
 
     print("El precio final de su compra es de: ", precioTotal)
     return precioTotal
